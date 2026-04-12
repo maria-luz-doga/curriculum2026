@@ -35,12 +35,51 @@
     text-align: center;
     list-style: none;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #fffb95;
 }
 
+header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    background-color: lemonchiffon
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1200px;
+}
+
+.pintura {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer {
+    background-color: #eac665;
+    padding: 20px;
+    margin: 30px
+}
 
 /*aca empieza las aplicaciones*/
 
@@ -65,22 +104,17 @@ h4 {
     font-family: 'libertinus Sans', sans-serif;
     color: rgb(83, 129, 255);
     text-align: center;
-    font-size: 29px;
-    font-size: 29px;
+    font-size: 20px;
     text-align: center;
-}
-
-h5 {
-    font-family: 'FiraSans', sans-serif;
-    font-size: 15px;
+    line-height: 2.5;
 }
 
 p,
 li {
     font-family: 'FiraSans', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
     text-wrap-style: balance;
 }
 
@@ -89,20 +123,91 @@ ul {
     text-wrap-style: balance;
 }
 
+
 #hero {
     background-image: url(img/hero-fondo-.jpg);
     background-position: initial;
-    background-size: cover
+    background-size: cover;
+    border: 2px solid white;
+    padding: 35px 20px 35px 20px;
+    margin: 35px 0;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: #ffce74;
+    border-style: solid;
+    border-radius: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 
 #presentación {
-    background-image: url(img/patron.png);
     background-size: 100px;
+    padding: 20px;
+    min-width: 300px;
+    margin: 15px 0;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: #ffce74;
+    border-style: solid;
+    border-radius: 20px 0;
 }
 
 #frase {
     font-family: 'libertinus Sans Italic', sans-serif;
     font-size: 38px;
     color: rgb(255, 255, 255);
-    background: linear-gradient(45deg, #ffa62b, transparent);
+    background: linear-gradient(45deg, #ffa62b, #ffee4f);
+    padding: 20px;
+    min-height: 70px;
+    margin: 25px 0;
+    border-radius: 20px 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+
+
+.a,
+.b {
+    flex: 0 0 50%;
+    max-width: 50%;
+
+    padding: 20px;
+    margin-bottom: 60px;
+
+    border-top: 5px solid #ffce74;
+    border-bottom: 5px solid #ffce74;
+    border-radius: 20px 0;
+    margin: 50px 0px;
+    border-right: 5px;
+
+}
+
+
+.c,
+.d,
+.e {
+    flex: 1;
+    min-width: 200px;
+    list-style-position: inside;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-right-width: 10px;
+    border-left-width: 4px;
+    border-color: #ffce74;
+    border-style: solid;
+    border-radius: 20px 0;
+    margin: 35px;
+    padding: 20px
 }

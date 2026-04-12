@@ -9,81 +9,105 @@
 
 <body>
     <header>
-        <img src="img/logo.jpg" alt="logo" width="25" height="25" />
+        <div class="contenedor">
+            <img src="img/perfil.jpeg" alt="logo" width="50px" height="60px" />
+            <nav style="display: flex;">
+                <a href="#">Mi porfolio</a>
+            </nav>
+        </div>
     </header>
+
     <main>
+
+        <!--Va un hero-->
 
         <section id="hero">
             <h1>Mi curriculum</h1>
             <h2>En diseño grafico</h2>
         </section>
 
-        <section>
-            <h3>Un poco sobre mi</h3>
-        </section>
+        <section class="flex-container">
+            <article class="flex-item a">
+                <h3>Un poco sobre mi</h3>
+                <p>Mi nombre es Maria Luz Doga, de Alejandro Korn zona sur. Soy estudiante de la Licenciatura en Diseño
+                    y
+                    Comunicacion Visual en la Universidad de Lanús. Me intereso en trabajos de diseño grafico y en la
+                    identidad de marcas. Estoy preparada para experimentar nuevas cosas y crear grandes diseños.</p>
+            </article>
 
-        <section id="presentación">
-            <p>Mi nombre es Maria Luz Doga, de Alejandro Korn zona sur. Soy estudiante de la Licenciatura en Diseño y
-                Comunicacion Visual en la Universidad de Lanús. Me intereso en trabajos de diseño grafico y en la
-                identidad de marcas. Estoy preparada para experimentar nuevas cosas y crear grandes diseños.</p>
-        </section>
-
-        <section>
-            <article>
-                <h4>Hobbies</h4>
-                <img src="img/pintura.jpg" alt="pintura" width="250" height="341">
-                <h5>Realizo pintura y dibujos a mano alzada</h5>
+            <article class="flex-item b">
+                <h3>Informe acadamico</h3>
+                <p>Mis estudios tanto primarios como secundarios, los realicé en la Escuela Normal Superior Almafuerte
+                    n°28.
+                    Ahora estoy realizando la carrera de Diseño y Comunicación Visual en la Universidad Nacional de
+                    Lanús. Y
+                    Realice cursos virtuales en Codere, para fortalecer el uso de los programas de diseño.</p>
             </article>
         </section>
 
-        <section>
-            <h3>Habilidades</h3>
-            <ul>
-                <li>Dominio del paquete Adobe </li>
-                <li>Buen manejo en el dibujo a mano alzada</li>
-                <li>Buena comunicacion</li>
-                <li>Resposable y creativa</li>
-            </ul>
-        </section>
+        <section class="flex-container">
+            <article class="flex-item c">
+                <h4>Hobbies</h4>
+                <ul>
+                    <li>Realizo arte</li>
+                    <li>Maquillar</li>
+                    <li>Ver series</li>
+                    <li>Trekking</li>
+                </ul>
+            </article>
 
-        <section>
-            <h3>Informe acadamico</h3>
-            <p>Mis estudios tanto primarios como secundarios, los realicé en la Escuela Normal Superior Almafuerte n°28.
-                Ahora estoy realizando la carrera de Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Y
-                Realice cursos virtuales en Codere, para fortalecer el uso de los programas de diseño.</p>
-        </section>
+            <article class="flex-item d">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Dominio del paquete Adobe </li>
+                    <li>Buen manejo en el dibujo a mano alzada</li>
+                    <li>Buena comunicacion</li>
+                    <li>Resposable y creativa</li>
+                </ul>
+            </article>
 
-        <section>
-            <h3>Experiencia laboral</h3>
-            <ul>
-                <li>Atencion al cliente</li>
-                <li>Realizo placas para las redes sociales de un club de fútbol</li>
-                <li>Trabajos para conocidos</li>
-            </ul>
+            <article class="flex-item e">
+                <h3>Experiencia laboral</h3>
+                <ul>
+                    <li>Atencion al cliente</li>
+                    <li>Realizo placas para las redes sociales de un club de fútbol</li>
+                    <li>Trabajos para conocidos</li>
+                </ul>
+            </article>
         </section>
 
         <section id="frase">
             <h6>"Las tendencias desaparecen, el estilo es eterno"</h6>
         </section>
+
+        <section>
+            <h4>Pinturas</h4>
+            <div class="pintura">
+                <a></a>
+                <img src="img/pintura.jpg" alt="pintura" width="250" height="341">
+
+                <img src="img/pintura-2.jpg" alt="pintura-2" width="250" height="341">
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <h3>Catedra Wischñevsky 2026</h3>
-        <h4>Nuestras redes</h4>
-        <ul>
-            <li>
+        <nav>
+            <section id="Redes">
                 <img src="img/instagram-.png" alt="Instagram" width="25" height="25" />
-                <a href="https://www.instagram.com/wis.unla/">Instagram</a>
-            </li>
-            <li>
+                <a href="#">Instagram</a>
+
+
                 <img src="img/facebook-.png" alt="Facebook" width="25" height="25" />
                 <a href="#">Facebook</a>
-            </li>
-            <li>
+
+
                 <img src="img/tiktok-.png" alt="Tiktok" width="25" height="25" />
                 <a href="#">Tiktok</a>
-            </li>
-        </ul>
+            </section>
+        </nav>
+        <p>Cátedra Wischñevsky 2026</p>
     </footer>
 
 </body>
