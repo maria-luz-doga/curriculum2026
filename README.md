@@ -1,4 +1,4 @@
-# TP1-MI CURRICULUM - DOGA MARIA LUZ
+# TP1 - MI CURRICULUM - DOGA MARIA LUZ
 
 * En este trabajo desarrolle y diseñe mi primera página web, en la que se expone mi currículum. Utilice html, css y herramientas flexbox, con la aplicacion Visual Estudio Code. Trabaje con una resolución de pantalla de 1920x1080.
 
