@@ -4,29 +4,29 @@
 /*configuraciones generales*/
 
 @font-face {
-    font-family: "libertinus Sans";
-    src: url(fuentes/LibertinusSans-Regular.ttf) format(truetype);
+    font-family: "libertinus sans";
+    src: url(fuentes/libertinussans-regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "libertinus Sans Italic";
-    src: url(fuentes/LibertinusSans-Italic.ttf) format(truetype);
+    font-family: "libertinus sans italic";
+    src: url(fuentes/libertinussans-italic.ttf) format(truetype);
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "BricolageGrotesque Bold";
-    src: url(fuentes/BricolageGrotesque_24pt_Condensed-Bold.ttf) format(truetype);
+    font-family: "bricolagegrotesque bold";
+    src: url(fuentes/bricolagegrotesque_24pt_condensed-bold.ttf) format(truetype);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "FiraSans";
-    src: url(fuentes/FiraSans-Light.ttf) format(truetype);
+    font-family: "firasans";
+    src: url(fuentes/firasans-light.ttf) format(truetype);
     font-weight: lighter;
     font-style: normal;
 }
@@ -49,11 +49,6 @@ header {
     padding: 10px 20px;
     justify-content: center;
     background-color: lemonchiffon
-}
-
-
-nav{
-    display: flex;
 }
 
 section {
@@ -96,14 +91,14 @@ footer nav {
 /*aca empieza las aplicaciones*/
 
 h1 {
-    font-family: 'BricolageGrotesque Bold', sans-serif;
+    font-family: 'bricolagegrotesque bold', sans-serif;
     color: rgb(83, 129, 255);
     font-size: 3.2rem;
     /*line-height: 1rem;*/
 }
 
 h2 {
-    font-family: 'Libertinus Sans Italic', sans-serif;
+    font-family: 'libertinus sans italic', sans-serif;
     color: rgb(255, 170, 58);
     font-size: 2rem;
     line-height: 3rem;
@@ -111,7 +106,7 @@ h2 {
 
 h3,
 h4 {
-    font-family: 'libertinus Sans', sans-serif;
+    font-family: 'libertinus sans', sans-serif;
     color: rgb(83, 129, 255);
     font-size: 20px;
     line-height: 2.5;
@@ -119,7 +114,7 @@ h4 {
 
 p,
 li {
-    font-family: 'FiraSans', sans-serif;
+    font-family: 'firasans', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     text-wrap-style: balance;
@@ -165,7 +160,7 @@ ul {
 
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 
@@ -173,10 +168,8 @@ ul {
 
 
 
-.a,
-.b {
-    flex: 0 0 50%;
-    max-width: 50%;
+.flex-item {
+    flex: 1 1 40%;
 
     padding: 20px;
 
@@ -187,9 +180,7 @@ ul {
 }
 
 
-.c,
-.d,
-.e {
+.flex-item-a {
     flex: 1;
     min-width: 200px;
     list-style-position: inside;
