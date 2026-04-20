@@ -27,7 +27,7 @@
 @font-face {
     font-family: "Firasans light";
     src: url(fuentes/Firasans-Light.ttf) format(truetype);
-    font-weight: lighter;
+    font-weight: normal;
     font-style: normal;
 }
 
