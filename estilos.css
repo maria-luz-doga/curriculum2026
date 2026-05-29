@@ -3,36 +3,44 @@
 
 /*configuraciones generales*/
 
+
 @font-face {
-    font-family: "libertinus sans";
-    src: url(fuentes/LibertinusSans-Regular.ttf) format(truetype);
+    font-family: "amarante regular";
+    src: url(fuentes/Amarante-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "libertinus sans italic";
-    src: url(fuentes/LibertinusSans-Italic.ttf) format(truetype);
-    font-weight: normal;
+    font-family: "krub medium";
+    src: url(fuentes/Krub-Medium.ttf) format(truetype);
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "krub medium italic";
+    src: url(fuentes/Krub-MediumItalic.ttf) format(truetype);
+    font-weight: medium;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "bricolagegrotesque bold";
-    src: url(fuentes/BricolageGrotesque_24pt_Condensed-Bold.ttf) format(truetype);
+    font-family: "krub semibold";
+    src: url(fuentes/Krub-SemiBold.ttf) format(truetype);
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "FiraSans-Light";
-    src: url(fuentes/FiraSans-Light.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
+@font-face{
+    font-family: 'krub bold italic';
+    src: url(fuentes/Krub-BoldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
 }
 
 * {
-    text-align: center;
+    /*text-align: center;*/
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -40,153 +48,560 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: #fffb95;
+    background-image: url(img/fondo-completo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/*header*/
 
 header {
     display: flex;
-    padding: 10px 20px;
+    padding: 40px;
     justify-content: center;
-    background-color: lemonchiffon
+}
+
+header nav {
+    display: flex;
+    width: 1706px;
+    padding: 8px 40px;
+    border: 3px solid white;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botones {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+#botones a {
+    color: white;
+    font-family: 'krub semibold', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 section {
     width: 100%;
 }
 
-.contenedor {
+
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    max-width: 1200px;
+
+    width: 95%;
+
+    margin: 30px;
+    margin-top: 30px;
+
+    padding: 8px 40px;
+
+    border: 3px solid white;
+    border-radius: 15px;
 }
 
-.pintura {
+.footer-izquierdo {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.pintura a {
-    display: flex;
-    gap: 20px;
-}
-
-footer {
-    background-color: #eac665;
-    padding: 20px;
-    margin: 30px
-}
-
-footer nav {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
+}
+
+.footer-izquierdo ul {
+    list-style: none;
+}
+
+.footer-izquierdo p {
+    color: white;
+    font-family: 'krub medium', sans-serif;
+    font-size: 14px;
+}
+
+.contacto-mail ul {
+    list-style: none;
+}
+
+.contacto-mail p {
+    color: white;
+
+    font-family: 'krub medium', sans-serif;
+    font-size: 14px;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /*aca empieza las aplicaciones*/
 
-h1 {
-    font-family: 'bricolagegrotesque bold', sans-serif;
-    color: rgb(83, 129, 255);
-    font-size: 3.2rem;
-    /*line-height: 1rem;*/
-}
-
-h2 {
-    font-family: 'libertinus sans italic', sans-serif;
-    color: rgb(255, 170, 58);
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
-h3,
-h4 {
-    font-family: 'libertinus sans', sans-serif;
-    color: rgb(83, 129, 255);
-    font-size: 20px;
-    line-height: 2.5;
-}
-
-p,
-li {
-    font-family: 'firasans light', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    text-wrap-style: balance;
-}
-
-ul {
-    list-style: none;
-    text-wrap-style: balance;
-}
-
-
-#hero {
-    background-image: url(img/hero-fondo-.jpg);
-    background-position: initial;
-    background-size: cover;
-    padding: 35px 20px;
-    margin: 35px 0;
-    border-top: 5px solid #ffce74;
-    border-bottom: 5px solid #ffce74;
-    border-radius: 20px 0;
-}
-
-#presentación {
-    background-size: 100px;
-    padding: 20px;
-    min-width: 300px;
-    margin: 15px 0;
-    border-top: 5px solid #ffce74;
-    border-bottom: 5px solid #ffce74;
-    border-radius: 20px 0;
-}
-
-#frase {
-    font-family: 'libertinus Sans Italic', sans-serif;
-    font-size: 38px;
-    color: rgb(255, 255, 255);
-    background: linear-gradient(45deg, #ffa62b, #ffee4f);
-    padding: 20px;
-    min-height: 70px;
-    margin: 25px 0;
-    border-radius: 20px 0;
-}
-
-.flex-container {
+.presentacion {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
 
+    margin-top: 120px;
+
+    text-align: center;
+}
+
+.presentacion h1 {
+    font-family: "amarante regular", sans-serif;
+    font-size: 80px;
+    color: black;
+
+    margin-bottom: 20px;
+}
+
+.presentacion h2 {
+    font-family: "Krub semibold", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 150px;
+    width: 420px;
+
+    line-height: 1.4;
+
+    text-align: left;
+}
+
+.presentacion img {
+    margin-top: 70px;
+}
+
+.barra-izquierda {margin: 100px 0;}
+/*p {
+    color: #000;
+
+    font-family: Krub;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 155%
+}*/
+
+/*sobre-mi-index*/
+
+
+.sm-texto{display: flex;
+align-items: flex-start;
+gap: 83px;
+align-self: stretch;}
+
+.mari-chiquita1 {
+
+    border-radius: 100px 30px;
+border: 2px solid #000;
+
+    object-fit: cover;
+    margin-left: 200px;
+}
+
+.h3-yo {height: 85px;
+align-self: stretch;
+color: #000;
+
+font-family: "amarante regular", sans-serif;
+font-size: 75px;
+font-style: normal;
+font-weight: 400;
+line-height: 71%;}
+
+.boton-sm{
+padding: 12px 32px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: black; 
+
+font-family: "amarante regular", sans-serif;
+font-size: 30px;
+line-height: 109%;
+border-radius: 16px;
+border: 2px solid #000;
+
+background: rgba(245, 245, 245, 0.38)
+}
+
+.parrafo{height: 230px;
+align-self: stretch;
+color: #000;
+
+font-family: 'krub medium', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 155%;}
+
+.barra-derecha {margin: 100px 30px;
+box-sizing: border-box;}
+
+/*trabajemos-juntos-index*/
+
+.contacto-index{display: flex;
+width: 1389px;
+flex-direction: column;
+align-items: flex-start;
+gap: 75px;
+margin: 150px 30px}
+
+.contacto-texto{display: flex;
+width: 1313px;
+align-items: center;
+gap: 85px;}
+
+.trabajemos{display: flex;
+width: 907px;
+flex-direction: column;
+align-items: flex-end;
+gap: 21px;}
+
+.h3-juntos{color: #000;
+
+text-align: right;
+font-family: Amarante;
+font-size: 75px;
+font-style: normal;
+font-weight: 400;
+line-height: 90px;}
+
+.parrafo-juntos{
+    height: 199px;
+    color: #000;
+
+text-align: right;
+font-family: Krub;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 155%;
+margin-left: 200px;}
+
+
+.boton-cnt {padding: 12px 45px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: black; 
+margin-left: 100px;
+
+font-family: "amarante regular", sans-serif;
+font-size: 30px;
+line-height: 109%;
+border-radius: 16px;
+border: 2px solid #000;
+
+background: rgba(245, 245, 245, 0.38)
+}
+
+/*contacto estilos*/
+.main-cont{display: flex;
+width: 1375px;
+flex-direction: column;
+align-items: flex-start;
+gap: 177px;}
+
+.cont-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 85px;
+}
+
+.h1-trabajar{
+    width: 720px;
+height: 213px;
+color: #000;
+
+font-family: "amarante regular", sans-serif;
+font-size: 85px;
+font-style: normal;
+font-weight: 400;
+line-height: 109%;
+}
+
+.formulario{
+width: 785px;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+    border-radius: 80px 30px;
+border: 2px solid #000;
+
+background: rgba(181, 141, 67, 0.56);
+padding: 70px 70px;
+
+    margin-top: 50px;
+    margin-bottom: 120px;
 }
 
 
+.datos-personas,
+.mail{
+    display: flex;
+width: 432px;
+flex-direction: column;
+gap: 13px;;
+}
 
-.flex-item {
-    flex: 1 1 40%;
+.datos-personas input,
+.mail input{
+    width: 250px;
+    height: 40px;
+
+    border-radius: 12px;
+border: 2px solid #000;
+
+background: rgba(245, 245, 245, 0.38);
+
+    padding: 10px;
+}
+
+.formulario label,
+.buscas p{
+    font-family: "Krub medium", sans-serif;
+    font-size: 16px;
+}
+
+.selecciona{
+    display: flex;
+    gap: 65px;
+
+    margin-top: 20px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.checkbox input{
+    width: 35px;
+    height: 35px;
+
+    border-radius: 10px;
+    border: 2px solid #000;
+
+    background: rgba(245, 245, 245, 0.38);
+
+    appearance: none;
+    cursor: pointer;
+
+    position: relative;}
+
+.checkbox input:checked::before{
+    content: "✓";
+
+    color: black;
+    font-size: 16px;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);}
+
+    .checkbox span{
+    font-family: "krub medium italic", sans-serif;
+    font-size: 16px;
+    font-weight: 400;}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+
+    resize: none;
+
+    border-radius: 15px;
+border: 2px solid #000;
+background: rgba(245, 245, 245, 0.38);
+
 
     padding: 20px;
-
-    border-top: 5px solid #ffce74;
-    border-bottom: 5px solid #ffce74;
-    border-radius: 20px 0;
-    margin: 50px 0px;
 }
 
+.boton-enviar{
+    align-self: flex-end;
 
-.flex-item-a {
-    flex: 1;
-    min-width: 200px;
-    list-style-position: inside;
-    border: 5px solid #ffce74;
-    border-radius: 20px 0;
-    border-right-width: 10px;
-    margin: 35px;
-    padding: 20px;
+    width: 130px;
+    height: 45px;
+
+    border-radius: 12px;
+border: 2px solid #000;
+background: rgba(245, 245, 245, 0.38);
+
+
+    font-family: "amarante regular", sans-serif;
+    font-size: 23px;
+
+    cursor: pointer;
 }
+
+.dato{
+    display: flex;
+    gap: 137px;}
+
+
+/*sobre mi-html*/
+
+.sobre-mi{
+    display: flex;
+    align-items: center;
+
+    gap: 80px;
+
+    margin-bottom: 120px;
+}
+.img-mari 
+{border-radius: 85px 30px;
+border: 2px solid #000;
+    width: 420px;
+    height: 420px;
+
+    object-fit: cover;
+
+    margin-left: 200px;
+}
+
+.mas-sobre-mi{
+    width: 650px;
+}
+
+.mas-sobre-mi h1{
+    font-family: "amarante regular", sans-serif;
+    font-size: 70px;
+
+    margin-bottom: 20px;
+}
+
+.mas-sobre-mi p{
+    font-family: "Krub medium", sans-serif;
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+.info-cajas{
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-bottom: 120px;
+}
+
+.flex-item{
+    width: 340px;
+
+    padding: 35px;
+
+
+    border-radius: 60px 30px;
+border: 2px solid #000;
+
+background: rgba(181, 141, 67, 0.56);
+}
+
+.flex-item h3,
+.flex-item h4{
+    font-family: "amarante regular", sans-serif;
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+.flex-item h5{
+    font-family: "krub bold italic", sans-serif;
+    font-size: 18px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.flex-item p,
+.flex-item li{
+    font-family: "Krub medium", sans-serif;
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+.flex-item li{
+    margin-bottom: 20px;}
+
+.hobbies{display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.hobbies h6{
+    font-family: "amarante regular", sans-serif;
+    font-size: 40px;
+
+    margin-bottom: 50px;
+    
+}
+
+.actividad{
+    display: flex;
+    gap: 40px;
+}
+
+.audio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 150px;
+margin-top: 120px;
+}
+
+.audio h6{
+    font-family: "amarante regular", sans-serif;
+    font-size: 40px;
+
+    margin-bottom: 40px;
+}
+
+.audio audio{
+    width: 500px;
+    height: 60px;
+
+border-radius: 5px;
+}
+
+.audio p{
+    width: 500px;
+
+    text-align: left;
+
+    font-family: "Krub medium", sans-serif;
+    font-size: 14px;
+
+    margin-top: 10px;
+}
+

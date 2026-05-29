@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>La web de Doga</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html">
+                    <img src="img/estrella.svg" alt="logo" width="40" height="39" />
+                </a>
+            </div>
+            <ul id="botones">
+                <li>
+                    <a href="sobremi.html">SOBRE MI</a>
+                </li>
+                <li>
+                    <a href="#">PORFOLIO</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-cont">
+        <section class="cont-full">
+            <h1 class="h1-trabajar">¡TRABAJEMOS JUNTOS!</h1>
+
+            <form method="post" action target="_blank" enctype="multipart/form-data" class="formulario">
+                <div class="dato">
+                <div class="datos-personas">
+                    <label for="nobre">
+                        <p>Nombre y Apellido*</p>
+                    </label>
+                    <input type="text" name="nombre" id="nombre" maxlength="30" required>
+                </div>
+                <div class="mail">
+                    <label for="mail">
+                        <p>Tu mail*</p>
+                    </label>
+                    <input type="email" name="mail" id="email" required>
+                </div>
+                </div>
+
+                <div class="buscas">
+                    <p>Buscas</p>
+                    <div class="selecciona">
+                        <label class="checkbox">
+                            <input type="checkbox" unchecked>
+                            <span>Diseño</span>
+                        </label>
+                        <label class="checkbox"><input type="checkbox" unchecked>
+                            <span>Editorial</span>
+                        </label>
+                        <label class="checkbox"><input type="checkbox" unchecked><span>Packaging</span>
+                        </label>
+                        <label class="checkbox"><input type="checkbox" unchecked><span>Otra cosa</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mensaje">
+                    <label for="mensaje">
+                        <h7>Tu consulta</h5>
+                    </label>
+                    <textarea name="mensaje" id="mensaje" maxlength="700" required></textarea>
+                </div>
+                <input type="submit" class="boton-enviar" value="ENVIAR">
+            </form>
+        </section>
+
+        <footer>
+        <div class="footer-izquierdo">
+            <img src="img/catedra.png" alt="catedra" width="84" height="46">
+            <ul>
+                <li>
+                    <p>Computación III</p>
+                </li>
+                <li>
+                    <p>Catedra Wischñevsky</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contacto-mail">
+            <ul>
+                <li>
+                    <p>Contacto</p>
+                </li>
+                <li>
+                    <p>dogamarialuz@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="redes-sociales">
+            <img src="img/facebook.svg" alt="facebook" width="35" height="35">
+            <a href="#"></a>
+
+            <img src="img/begance.svg.svg" alt="begance" width="60" height="34">
+            <a href="#"></a>
+
+            <img src="img/instagram.svg" alt="instagram" width="35" height="35">
+            <a href="#"></a>
+        </div>
+
+    </footer>
+    </main>
+</body>
