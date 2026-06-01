@@ -1,4 +1,4 @@
-# PRE-ENTREGA TP3 - MI PORFOLIO - DOGA MARIA LUZ
+# ENTREGA TP3 - MI PORFOLIO - DOGA MARIA LUZ
 
 *En este trabajo desarrollé y diseñé una página web donde se puede encontrar mi portfolio. La misma cuenta con una página de inicio, una sección con información sobre mí, un portfolio con mis proyectos con una galería de imágenes y un formulario de contacto.
 
