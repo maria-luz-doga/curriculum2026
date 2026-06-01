@@ -3,25 +3,26 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La web de Doga</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div>
-                <a href="index.html">
-                    <img src="img/estrella.svg" alt="logo" width="40" height="39" />
-                </a>
-            </div>
+            <a href="index.html">
+                <img src="img/svg/estrella.svg" alt="logo" width="40" height="39" />
+            </a>
+
             <ul id="botones">
                 <li>
                     <a href="sobremi.html">SOBRE MI</a>
                 </li>
                 <li>
-                    <a href="#">PORFOLIO</a>
+                    <a href="porfolio.html">PORFOLIO</a>
                 </li>
                 <li>
                     <a href="contacto.html">CONTACTO</a>
@@ -29,3 +30,132 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="proyectos">
+            <h1 class="titulo">ALGUNOS DE MIS PROYECTOS</h1>
+            <!-- galeria -->
+
+            <article id="galeria-proyectos1">
+
+                <a href="img/porfolio.02/proyecto1.jpg" data-fancybox="gallery" data-caption="Vinilo Babasónicos">
+                    <img src="img/porfolio/proyecto1-thumbnail.jpg" alt="Proyecto 1 - vinilo" />
+                    <h3>VINILO</h3>
+                    <p>Diseño de vinilo de Babasónicos basado en la experimentación tipográfica y la exploración de una
+                        estética visual experimental</p>
+                </a>
+
+                <a href="img/porfolio.02/proyecto2.jpg" data-fancybox="gallery"
+                    data-caption="Afiche Pelicula Joven manos de tijera">
+                    <img src="img/porfolio/proyecto2-thumbnail.jpg" alt="Proyecto 2 - pelicula" />
+                    <h3>AFICHE DE PELICULA</h3>
+                    <p>Afiche fotográfico inspirado en la película El Joven Manos de Tijera, realizado a partir de una
+                        producción y fotografía propia para explorar
+                        la composición.</p>
+                </a>
+
+                <a href="img/porfolio.02/proyecto3.jpg" data-fancybox="gallery"
+                    data-caption="Afiche Festival de cines Argentinos">
+                    <img src="img/porfolio/proyecto3-thumbnail.jpg" alt="Proyecto 3 - festival" />
+                    <h3>AFICHE DE FESTIVAL</h3>
+                    <p>Afiche realizado para Taller II basado en el diseño visual de un festival de cine argentino.</p>
+                </a>
+            </article>
+
+            <!-- galeria grupo2 -->
+
+            <article id="galeria-proyectos2">
+
+                <h3>FOTOGRAFIA</h3>
+
+                <div class="grupo-fotos">
+                    <a href="img/porfolio.02/proyecto4.jpg" data-fancybox="gallery" data-caption="Fotografia Retrato">
+                        <img src="img/porfolio/proyecto4-thumbnail.jpg" alt="Proyecto 4 - foto retrato" />
+                    </a>
+
+                    <a href="img/porfolio.02/proyecto5.jpg" data-fancybox="gallery" data-caption="Fotografia Contraluz">
+                        <img src="img/porfolio/proyecto5-thumbnail.jpg" alt="Proyecto 5 - Foto contraluz" />
+                    </a>
+
+                    <a href="img/porfolio.02/proyecto6.jpg" data-fancybox="gallery"
+                        data-caption="Fotografia en movimiento">
+                        <img src="img/porfolio/proyecto6-thumbnail.jpg" alt="Proyecto 6 - Foto en movimiento" />
+                    </a>
+
+                    <a href="img/porfolio.02/proyecto7.jpg" data-fancybox="gallery" data-caption="Fotografia Contraluz">
+                        <img src="img/porfolio/proyecto7-thumbnail.jpg" alt="Proyecto 7 - Foto Contraluz2" />
+                    </a>
+                </div>
+
+            </article>
+
+            <!-- galeria grupo3 -->
+
+            <article id="galeria-proyectos3">
+
+                <a href="img/porfolio.02/proyecto8.jpg" data-fancybox="gallery" data-caption="Libro de plantas">
+                    <img src="img/porfolio/proyecto8-thumbnail.jpg" alt="Proyecto 8 - libro de plantas" />
+                    <h3>FLORES Y PLANTAS</h3>
+                    <p>TP de Tipografía II consiste en el diseño editorial de un libro de plantas, explorando la
+                        tipografía
+                        y la composición.</p>
+                </a>
+
+                <a href="img/porfolio.02/proyecto9.jpg" data-fancybox="gallery" data-caption="Packaging de semillas">
+                    <img src="img/porfolio/proyecto9-thumbnail.jpg" alt="Proyecto 9 - packaging" />
+                    <h3>PACKAGING</h3>
+                    <p>Trabajo practico de expresión visual, explorando composición gráfica e identidad visual aplicada
+                        al packaging.</p>
+                </a>
+
+                <a href="img/porfolio.02/proyecto10.jpg" data-fancybox="gallery" data-caption="Latas de vino">
+                    <img src="img/porfolio/proyecto10-thumbnail.jpg" alt="Proyecto 2 - Latas de vino" />
+                    <h3>LATAS DE VINO</h3>
+                    <p>Diseño de latas de vino realizado
+                        en Taller III, explorando una estética visual contemporánea aplicada
+                        al packaging.</p>
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-izquierdo">
+            <img src="img/catedra.png" alt="catedra" width="74" height="36">
+            <ul>
+                <li>
+                    <p>Computación III</p>
+                </li>
+                <li>
+                    <p>Catedra Wischñevsky</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contacto-mail">
+            <ul>
+                <li>
+                    <p>Contacto</p>
+                </li>
+                <li>
+                    <p>dogamarialuz@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="redes-sociales">
+            <img src="img/svg/facebook.svg" alt="facebook" width="25" height="25">
+            <a href="#"></a>
+
+            <img src="img/svg/begance.svg.svg" alt="begance" width="50" height="24">
+            <a href="#"></a>
+
+            <img src="img/svg/instagram.svg" alt="instagram" width="25" height="25">
+            <a href="#"></a>
+        </div>
+
+    </footer>
+
+    <script src="lightbox/jquery.min.js"></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
+</body>

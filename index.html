@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La web de Doga</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -11,17 +12,16 @@
 <body>
     <header>
         <nav>
-            <div>
-                <a href="index.html">
-                    <img src="img/estrella.svg" alt="logo" width="40" height="39" />
-                </a>
-            </div>
+            <a href="index.html">
+                <img src="img/svg/estrella.svg" alt="logo" width="40" height="39" />
+            </a>
+
             <ul id="botones">
                 <li>
                     <a href="sobremi.html">SOBRE MI</a>
                 </li>
                 <li>
-                    <a href="#">PORFOLIO</a>
+                    <a href="porfolio.html">PORFOLIO</a>
                 </li>
                 <li>
                     <a href="contacto.html">CONTACTO</a>
@@ -32,17 +32,17 @@
 
     <main>
         <section class="presentacion">
-            <h1>MARIA LUZ DOGA</h1>
-            <h2>Bienvenido a mi porfolio, llenos de proyectos y más.</h2>
-            <img src="img/flecha.svg" alt="flecha" width="80" height="41">
-            <div class="barra-izquierda"> <img src="img/barra-estrellas-izquierda.svg" alt="barra" width="1450">
-            </div>
+            <article>
+                <h1>MARIA LUZ DOGA</h1>
+                <h2>Bienvenido a mi porfolio, llenos de proyectos y más.</h2>
+            </article>
+            <img src="img/svg/flecha.svg" alt="flecha" width="70" height="31" class="flecha">
         </section>
 
         <section class="sobremi-index">
             <article class="sm-texto">
-                <img id="foto-mia" src="img/chiquita.jpeg" alt="chiquita" width="500" height="375"
-                    class="mari-chiquita1">
+                <img id="foto-mia" src="img/chiquita.jpg" alt="yo de chiquita en la tranquera de un campo" width="500"
+                    height="375" class="mari-chiquita1">
                 <div class="mari">
                     <h3 class="h3-yo">SOBRE MI</h3>
                     <p class="parrafo">Me llamo Maria Luz Doga, estudiante actualmente de Diseño y Comunicación Visual
@@ -50,22 +50,23 @@
                         sobre mi desde chiquita me gusta dibujar y hacer manualidades, por esta razón elegí esta
                         carrera.
                     </p>
-                    <button class="boton-sm"><a href="sobremi.html">SABER MÁS</a></button>
+                    <a href="sobremi.html" class="boton-sm">SABER MÁS</a>
+                </div>
             </article>
-            </div>
 
-            <div class="barra-derecha"><img src="img/barra-estrellas-derecha.svg" alt="barra" width="1450"></div>
         </section>
 
         <section class="contacto-index">
             <article class="contacto-texto">
-            <div class="trabajamos">
-                <h3 class="h3-juntos">¿TRABAJAMOS JUNTOS?</h3>
-                <p class="parrafo-juntos">¿Tenes una idea, emprendimiento o proyecto y necesitas darle una identidad visual? Puedo ayudarte a convertirlo en algo atractivo, creativo y pensado especialmente para vos. No dudes en escribime y
-                    contame lo que tenes en mente.</p>
-                    <button class="boton-cnt"><a href="contacto.html">CONTACTO</a></button>
-            </div>
-            <img src="img/contacto.svg" alt="contacto" width="375" height="315" class="img-contacto">
+                <div class="trabajamos">
+                    <h3 class="h3-juntos">¿TRABAJAMOS JUNTOS?</h3>
+                    <p class="parrafo-juntos">¿Tenes una idea, emprendimiento o proyecto y necesitas darle una identidad
+                        visual? Puedo ayudarte a convertirlo en algo atractivo, creativo y pensado especialmente para
+                        vos. No dudes en escribime lo que tenes en mente.</p>
+                    <a href="contacto.html" class="boton-cnt">CONTACTO</a>
+                </div>
+                <img src="img/trabajemos.png" alt="dos manos agarradas formando un corazon" width="375" height="315"
+                    class="img-contacto">
             </article>
         </section>
 
@@ -73,7 +74,7 @@
 
     <footer>
         <div class="footer-izquierdo">
-            <img src="img/catedra.png" alt="catedra" width="84" height="46">
+            <img src="img/catedra.png" alt="catedra" width="74" height="36">
             <ul>
                 <li>
                     <p>Computación III</p>
@@ -96,13 +97,13 @@
         </div>
 
         <div class="redes-sociales">
-            <img src="img/facebook.svg" alt="facebook" width="35" height="35">
+            <img src="img/svg/facebook.svg" alt="facebook" width="25" height="25">
             <a href="#"></a>
 
-            <img src="img/begance.svg.svg" alt="begance" width="60" height="34">
+            <img src="img/svg/begance.svg.svg" alt="begance" width="50" height="24">
             <a href="#"></a>
 
-            <img src="img/instagram.svg" alt="instagram" width="35" height="35">
+            <img src="img/svg/instagram.svg" alt="instagram" width="25" height="25">
             <a href="#"></a>
         </div>
 

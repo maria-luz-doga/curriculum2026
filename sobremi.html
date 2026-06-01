@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La web de Doga</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -11,17 +12,16 @@
 <body>
     <header>
         <nav>
-            <div>
-                <a href="index.html">
-                <img src="img/estrella.svg" alt="logo" width="40" height="39" />
+            <a href="index.html">
+                <img src="img/svg/estrella.svg" alt="logo" width="40" height="39" />
             </a>
-            </div>
+
             <ul id="botones">
                 <li>
                     <a href="sobremi.html">SOBRE MI</a>
                 </li>
                 <li>
-                    <a href="#">PORFOLIO</a>
+                    <a href="porfolio.html">PORFOLIO</a>
                 </li>
                 <li>
                     <a href="contacto.html">CONTACTO</a>
@@ -30,23 +30,28 @@
         </nav>
     </header>
 
-<main>
-    <article class="sobre-mi">
-        <img src="img/yo.jpg" alt="yo" width="599px" height="600px" class="img-mari">
-        <div class="mas-sobre-mi">
-            <h1>HOLA! SOY MARI</h1>
-            <p>Mi nombre es Maria Luz Doga, de Alejandro Korn zona sur. Soy estudiante de la Licenciatura en Diseño y comunicacion Visual en la Universidad de Lanús. Me intereso en trabajos de diseño y en la identidad de marcas. Estoy preparada para experimentar nuevas cosas y crear grandes diseños.</p>
-        </div>
-    </article>
+    <main>
+        <section class="sobre-mi">
+            <img src="img/yo.jpg" alt="yo actualmente un estilo de foto retrato" width="420" height="420"
+                class="img-mari">
+            <article class="mas-sobre-mi">
+                <h1>HOLA! SOY MARI</h1>
+                <p>Mi nombre es Maria Luz Doga, de Alejandro Korn zona sur. Soy estudiante de la Licenciatura en Diseño
+                    y comunicacion Visual en la Universidad de Lanús. Me intereso en trabajos de diseño y en la
+                    identidad de marcas. Estoy preparada para experimentar nuevas cosas y crear grandes diseños.</p>
+            </article>
+        </section>
 
-    <section class="info-cajas">
+        <section class="info-cajas">
             <article class="flex-item">
-                <h4>EDUCACION</h4>
-                <h5>Primarios y secundarios</h5>
+                <h3>EDUCACION</h3>
+                <h4>Primarios y secundarios</h4>
                 <p>ENSA n°28 (2022).</p>
-                <h5>Universitario</h5>
+
+                <h4>Universitario</h4>
                 <p>Lic. en Diseño y Comunicación Visual - UNLa (2023-Actualidad).</p>
-                <h5>Cursos</h5>
+
+                <h4>Cursos</h4>
                 <p>Cursos de Codere para fortalecer el uso de programas de diseño.</p>
             </article>
 
@@ -68,29 +73,30 @@
                     <li>Responsable y creativa.</li>
                 </ul>
             </article>
-            </section>
+        </section>
 
-            <section class="hobbies">
-                <h6>HOBBIES</h6>
-                <div class="actividad">
-                    <img src="img/maquillaje.svg" alt="maquillaje" width="100px" height="100px">
-                    <img src="img/dibujo.svg" alt="dibujo" width="100px" height="100">
-                    <img src="img/montañas.svg" alt="mantaña" width="100px" height="100">
-                    <img src="img/series.svg" alt="serie" width="100px" height="100px">
-                </div>
-            </section>
+        <section class="hobbies">
+            <h5>HOBBIES</h5>
+            <div class="actividad">
+                <img src="img/svg/maquillaje.svg" alt="icono de tres tipos de maquillajes" width="100" height="100">
+                <img src="img/svg/dibujo.svg" alt="icono de un lapiz dibujando" width="100" height="100">
+                <img src="img/svg/montañas.svg" alt="icono de una mantaña" width="100" height="100">
+                <img src="img/svg/series.svg" alt="icono de una tele" width="100" height="100">
+            </div>
+        </section>
 
-            <section class="audio">
-                <h6>UNA DE MIS CANCIONES FAVORITAS</h6>
-                <audio controls autoplay>
-                    <source src="audio/TINI - Si Tu Te Vas (Official Video).mp3" type="audio/mpeg">
-                </audio>
-                <p>“SI TU TE VAS” - TINI STOESSEL</p>
-            </section>
+        <section class="audio">
+            <h5>UNA DE MIS CANCIONES FAVORITAS</h5>
+            <audio controls autoplay>
+                <source src="audio/tini-si-tu-te-vas.mp3" type="audio/mpeg">
+            </audio>
+            <p>“SI TU TE VAS” - TINI STOESSEL</p>
+        </section>
 
+    </main>
     <footer>
         <div class="footer-izquierdo">
-            <img src="img/catedra.png" alt="catedra" width="84" height="46">
+            <img src="img/catedra.png" alt="catedra" width="74" height="36">
             <ul>
                 <li>
                     <p>Computación III</p>
@@ -113,18 +119,15 @@
         </div>
 
         <div class="redes-sociales">
-            <img src="img/facebook.svg" alt="facebook" width="35" height="35">
+            <img src="img/svg/facebook.svg" alt="facebook" width="25" height="25">
             <a href="#"></a>
 
-            <img src="img/begance.svg.svg" alt="begance" width="60" height="34">
+            <img src="img/svg/begance.svg.svg" alt="begance" width="50" height="24">
             <a href="#"></a>
 
-            <img src="img/instagram.svg" alt="instagram" width="35" height="35">
+            <img src="img/svg/instagram.svg" alt="instagram" width="25" height="25">
             <a href="#"></a>
         </div>
 
     </footer>
-
-        </main>
-
 </body>

@@ -32,7 +32,7 @@
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'krub bold italic';
     src: url(fuentes/Krub-BoldItalic.ttf) format(truetype);
     font-weight: bold;
@@ -65,18 +65,19 @@ header {
 
 header nav {
     display: flex;
-    width: 1706px;
+    width: 100%;
+    max-width: 1706;
     padding: 8px 40px;
     border: 3px solid white;
     border-radius: 15px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #botones {
     display: flex;
     gap: 45px;
-    list-style: none;
 }
 
 #botones a {
@@ -90,19 +91,16 @@ section {
     width: 100%;
 }
 
+/*footer*/
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 95%;
-
     margin: 30px;
     margin-top: 30px;
-
-    padding: 8px 40px;
-
+    padding: 16px 40px;
     border: 3px solid white;
     border-radius: 15px;
 }
@@ -137,7 +135,7 @@ footer {
 .redes-sociales {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 /*aca empieza las aplicaciones*/
@@ -148,24 +146,22 @@ footer {
     justify-content: center;
     align-items: center;
 
-    margin-top: 120px;
+    height: 90vh;
 
     text-align: center;
+    margin-top: 40px;
 }
 
 .presentacion h1 {
     font-family: "amarante regular", sans-serif;
     font-size: 80px;
     color: black;
-
-    margin-bottom: 20px;
 }
 
 .presentacion h2 {
     font-family: "Krub semibold", sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    margin-right: 150px;
+    font-size: 23px;
+
     width: 420px;
 
     line-height: 1.4;
@@ -174,142 +170,141 @@ footer {
 }
 
 .presentacion img {
-    margin-top: 70px;
+    height: 30vh;
 }
-
-.barra-izquierda {margin: 100px 0;}
-/*p {
-    color: #000;
-
-    font-family: Krub;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 155%
-}*/
 
 /*sobre-mi-index*/
 
 
-.sm-texto{display: flex;
-align-items: flex-start;
-gap: 83px;
-align-self: stretch;}
+.sm-texto {
+    display: flex;
+    align-items: flex-start;
+    gap: 83px;
+    height: 80vh;
+}
 
 .mari-chiquita1 {
 
     border-radius: 100px 30px;
-border: 2px solid #000;
+    border: 2px solid #000;
 
     object-fit: cover;
     margin-left: 200px;
 }
 
-.h3-yo {height: 85px;
-align-self: stretch;
-color: #000;
-
-font-family: "amarante regular", sans-serif;
-font-size: 75px;
-font-style: normal;
-font-weight: 400;
-line-height: 71%;}
-
-.boton-sm{
-padding: 12px 32px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-color: black; 
-
-font-family: "amarante regular", sans-serif;
-font-size: 30px;
-line-height: 109%;
-border-radius: 16px;
-border: 2px solid #000;
-
-background: rgba(245, 245, 245, 0.38)
+.h3-yo {
+    color: #000;
+    font-family: "amarante regular", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 71px;
 }
 
-.parrafo{height: 230px;
-align-self: stretch;
-color: #000;
+.boton-sm {
+    padding: 12px 32px;
+    color: black;
+    font-family: "amarante regular", sans-serif;
+    font-size: 30px;
+    line-height: 109px;
+    border-radius: 16px;
+    border: 2px solid #000;
+    background: rgba(245, 245, 245, 0.38);
+}
 
-font-family: 'krub medium', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 155%;}
+.boton-sm:hover {
+border: 2px solid #000;
+background: rgba(60, 203, 255, 0.38);
+}
 
-.barra-derecha {margin: 100px 30px;
-box-sizing: border-box;}
+.parrafo {
+    color: #000;
+
+    font-family: 'krub medium', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 500px;
+    height: 30vh;
+}
+
 
 /*trabajemos-juntos-index*/
 
-.contacto-index{display: flex;
-width: 1389px;
-flex-direction: column;
-align-items: flex-start;
-gap: 75px;
-margin: 150px 30px}
+.contacto-index {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 75px;
+    height: 65vh;
+}
 
-.contacto-texto{display: flex;
-width: 1313px;
-align-items: center;
-gap: 85px;}
+.contacto-texto {
+    display: flex;
 
-.trabajemos{display: flex;
-width: 907px;
-flex-direction: column;
-align-items: flex-end;
-gap: 21px;}
+    align-items: center;
+    gap: 85px;
+}
 
-.h3-juntos{color: #000;
+.trabajemos {
+    display: flex;
+    width: 907px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
+}
 
-text-align: right;
-font-family: Amarante;
-font-size: 75px;
-font-style: normal;
-font-weight: 400;
-line-height: 90px;}
+.h3-juntos {
+    color: #000;
+    text-align: right;
+    font-family: Amarante;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 90px;
+}
 
-.parrafo-juntos{
+.parrafo-juntos {
     height: 199px;
     color: #000;
+    text-align: right;
+    font-family: Krub;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 155%;
+    margin-left: 270px;
+}
 
-text-align: right;
-font-family: Krub;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 155%;
-margin-left: 200px;}
 
+.boton-cnt {
+    padding: 12px 45px;
+    color: black;
+    margin-left: 100px;
+    font-family: "amarante regular", sans-serif;
+    font-size: 30px;
+    line-height: 109%;
+    border-radius: 16px;
+    border: 2px solid #000;
+    background: rgba(245, 245, 245, 0.38)
+}
 
-.boton-cnt {padding: 12px 45px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-color: black; 
-margin-left: 100px;
-
-font-family: "amarante regular", sans-serif;
-font-size: 30px;
-line-height: 109%;
-border-radius: 16px;
+.boton-cnt:hover {
 border: 2px solid #000;
+background: rgba(60, 203, 255, 0.38);
+}
 
-background: rgba(245, 245, 245, 0.38)
+.img-contacto {
+    margin-right: 120px;
 }
 
 /*contacto estilos*/
-.main-cont{display: flex;
-width: 1375px;
-flex-direction: column;
-align-items: flex-start;
-gap: 177px;}
 
-.cont-full{
+.main-cont {
+    display: flex;
+    width: 1375px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 177px;
+}
+
+.cont-full {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,291 +312,367 @@ gap: 177px;}
     margin-top: 85px;
 }
 
-.h1-trabajar{
+.h1-trabajar {
     width: 720px;
-height: 213px;
-color: #000;
+    height: 213px;
+    color: #000;
 
-font-family: "amarante regular", sans-serif;
-font-size: 85px;
-font-style: normal;
-font-weight: 400;
-line-height: 109%;
+    font-family: "amarante regular", sans-serif;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
 }
 
-.formulario{
-width: 785px;
-
-    padding: 40px;
-
+.formulario {
+    width: 785px;
     display: flex;
     flex-direction: column;
-
-    gap: 40px;
+    gap: 30px;
     border-radius: 80px 30px;
-border: 2px solid #000;
-
-background: rgba(181, 141, 67, 0.56);
-padding: 70px 70px;
-
-    margin-top: 50px;
-    margin-bottom: 120px;
+    border: 2px solid #000;
+    background: rgba(181, 141, 67, 0.56);
+    padding: 70px 70px;
+    margin-bottom: 50px;
 }
 
-
 .datos-personas,
-.mail{
+.mail {
     display: flex;
-width: 432px;
-flex-direction: column;
-gap: 13px;;
+    width: 432px;
+    flex-direction: column;
+    gap: 13px;
+    height: 12vh;
 }
 
 .datos-personas input,
-.mail input{
+.mail input {
     width: 250px;
     height: 40px;
-
     border-radius: 12px;
-border: 2px solid #000;
-
-background: rgba(245, 245, 245, 0.38);
-
+    border: 2px solid #000;
+    background: rgba(245, 245, 245, 0.38);
     padding: 10px;
 }
 
 .formulario label,
-.buscas p{
+.buscas p {
     font-family: "Krub medium", sans-serif;
     font-size: 16px;
 }
 
-.selecciona{
+.buscas {
+    height: 12vh;
+}
+
+.selecciona {
     display: flex;
     gap: 65px;
-
     margin-top: 20px;
 }
 
-.checkbox{
+.checkbox {
     display: flex;
     align-items: center;
     gap: 10px;
-    
+
 }
 
-.checkbox input{
+.checkbox input {
     width: 35px;
     height: 35px;
-
     border-radius: 10px;
     border: 2px solid #000;
-
     background: rgba(245, 245, 245, 0.38);
-
     appearance: none;
     cursor: pointer;
-
-    position: relative;}
-
-.checkbox input:checked::before{
-    content: "✓";
-
-    color: black;
-    font-size: 16px;
-
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);}
-
-    .checkbox span{
-    font-family: "krub medium italic", sans-serif;
-    font-size: 16px;
-    font-weight: 400;}
-
-.mensaje{
-    display: flex;
-    flex-direction: column;
-
-    gap: 15px;
+    position: relative;
 }
 
-textarea{
+.checkbox input:checked::before {
+    content: "✓";
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox span {
+    font-family: "krub medium italic", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 30vh;
+}
+
+textarea {
     width: 100%;
     height: 150px;
-
     resize: none;
-
     border-radius: 15px;
-border: 2px solid #000;
-background: rgba(245, 245, 245, 0.38);
-
-
+    border: 2px solid #000;
+    background: rgba(245, 245, 245, 0.38);
     padding: 20px;
 }
 
-.boton-enviar{
+.boton-enviar {
     align-self: flex-end;
-
     width: 130px;
     height: 45px;
-
     border-radius: 12px;
-border: 2px solid #000;
-background: rgba(245, 245, 245, 0.38);
-
-
+    border: 2px solid #000;
+    background: rgba(245, 245, 245, 0.38);
     font-family: "amarante regular", sans-serif;
     font-size: 23px;
-
     cursor: pointer;
 }
 
-.dato{
-    display: flex;
-    gap: 137px;}
+.boton-enviar:hover {
+border: 2px solid #000;
+background: rgba(60, 203, 255, 0.38);
+}
 
+.dato {
+    display: flex;
+    gap: 137px;
+}
 
 /*sobre mi-html*/
 
-.sobre-mi{
+.sobre-mi {
     display: flex;
     align-items: center;
-
     gap: 80px;
-
-    margin-bottom: 120px;
+    height: 80vh;
 }
-.img-mari 
-{border-radius: 85px 30px;
-border: 2px solid #000;
-    width: 420px;
-    height: 420px;
 
+.img-mari {
+    border-radius: 85px 30px;
+    border: 2px solid #000;
     object-fit: cover;
-
     margin-left: 200px;
 }
 
-.mas-sobre-mi{
+.mas-sobre-mi {
     width: 650px;
 }
 
-.mas-sobre-mi h1{
+.mas-sobre-mi h1 {
     font-family: "amarante regular", sans-serif;
     font-size: 70px;
-
     margin-bottom: 20px;
 }
 
-.mas-sobre-mi p{
+.mas-sobre-mi p {
     font-family: "Krub medium", sans-serif;
     font-size: 18px;
-
     line-height: 1.5;
 }
 
-.info-cajas{
+.info-cajas {
     display: flex;
     justify-content: center;
-
     gap: 40px;
-
-    margin-bottom: 120px;
+    height: 75vh;
 }
 
-.flex-item{
+.flex-item {
     width: 340px;
-
     padding: 35px;
-
-
     border-radius: 60px 30px;
-border: 2px solid #000;
-
-background: rgba(181, 141, 67, 0.56);
+    border: 2px solid #000;
+    background: rgba(181, 141, 67, 0.56);
+    height: 60vh;
 }
 
-.flex-item h3,
-.flex-item h4{
+.flex-item h3 {
     font-family: "amarante regular", sans-serif;
     font-size: 30px;
-
     margin-bottom: 30px;
 }
 
-.flex-item h5{
+.flex-item h4 {
     font-family: "krub bold italic", sans-serif;
     font-size: 18px;
-
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .flex-item p,
-.flex-item li{
+.flex-item li {
     font-family: "Krub medium", sans-serif;
     font-size: 16px;
-
     line-height: 1.5;
 }
 
-.flex-item li{
-    margin-bottom: 20px;}
-
-.hobbies{display: flex;
-flex-direction: column;
-align-items: center;
-
+.flex-item li {
+    margin-bottom: 20px;
 }
 
-.hobbies h6{
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+
+.hobbies h5 {
     font-family: "amarante regular", sans-serif;
     font-size: 40px;
-
     margin-bottom: 50px;
-    
+
 }
 
-.actividad{
+.actividad {
     display: flex;
     gap: 40px;
 }
 
-.audio{
+.audio {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-bottom: 150px;
-margin-top: 120px;
+    height: 30vh;
 }
 
-.audio h6{
+.audio h5 {
     font-family: "amarante regular", sans-serif;
-    font-size: 40px;
-
+    font-size: 35px;
     margin-bottom: 40px;
 }
 
-.audio audio{
+.audio audio {
     width: 500px;
     height: 60px;
-
-border-radius: 5px;
+    border-radius: 5px;
 }
 
-.audio p{
+.audio p {
     width: 500px;
-
     text-align: left;
-
     font-family: "Krub medium", sans-serif;
     font-size: 14px;
-
     margin-top: 10px;
 }
 
+/*porfolio*/
+
+.titulo {
+    font-family: "amarante regular", sans-serif;
+    font-size: 85px;
+    color: #000;
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 1000px;
+}
+
+/*grupo1y3*/
+#galeria-proyectos1,
+#galeria-proyectos3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    margin-bottom: 80px; 
+}
+
+#galeria-proyectos1 a,
+#galeria-proyectos3 a {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#galeria-proyectos1 img,
+#galeria-proyectos3 img {
+    border-radius: 30px;
+    width: 100%; 
+    height: auto;
+}
+
+#galeria-proyectos1 h3,
+#galeria-proyectos3 h3 {
+    margin-top: 20px;
+    font-family: "amarante regular", sans-serif;
+    font-size: 24px;
+}
+
+#galeria-proyectos1 p,
+#galeria-proyectos3 p {
+    margin-top: 8px;
+    font-family: "Krub medium", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#galeria-proyecto1 {
+    margin-top: 40px;
+}
+
+/*grupo2*/
+#galeria-proyectos2 {
+    display: flex;
+    flex-direction: column;
+margin-bottom: 120px;
+}
+
+#galeria-proyectos2 h3,
+#galeria-proyectos2 p {
+    font-family: "amarante regular", sans-serif;
+max-width: 1070px;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 90%;
+}
+
+#galeria-proyectos2 h3 {
+    font-size: 24px;
+}
+
+
+.grupo-fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 47px;
+    margin: 20px 0; 
+}
+
+.grupo-fotos img {
+    width: 240px;
+    height: 322px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/*mobile*/
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+    }
+
+    #botones {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+}

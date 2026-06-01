@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La web de Doga</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -11,17 +12,16 @@
 <body>
     <header>
         <nav>
-            <div>
-                <a href="index.html">
-                    <img src="img/estrella.svg" alt="logo" width="40" height="39" />
-                </a>
-            </div>
+            <a href="index.html">
+                <img src="img/svg/estrella.svg" alt="logo" width="40" height="39" />
+            </a>
+
             <ul id="botones">
                 <li>
                     <a href="sobremi.html">SOBRE MI</a>
                 </li>
                 <li>
-                    <a href="#">PORFOLIO</a>
+                    <a href="porfolio.html">PORFOLIO</a>
                 </li>
                 <li>
                     <a href="contacto.html">CONTACTO</a>
@@ -36,18 +36,18 @@
 
             <form method="post" action target="_blank" enctype="multipart/form-data" class="formulario">
                 <div class="dato">
-                <div class="datos-personas">
-                    <label for="nobre">
-                        <p>Nombre y Apellido*</p>
-                    </label>
-                    <input type="text" name="nombre" id="nombre" maxlength="30" required>
-                </div>
-                <div class="mail">
-                    <label for="mail">
-                        <p>Tu mail*</p>
-                    </label>
-                    <input type="email" name="mail" id="email" required>
-                </div>
+                    <div class="datos-personas">
+                        <label for="nobre">
+                            <p>Nombre y Apellido*</p>
+                        </label>
+                        <input type="text" name="nombre" id="nombre" maxlength="30" required>
+                    </div>
+                    <div class="mail">
+                        <label for="mail">
+                            <p>Tu mail*</p>
+                        </label>
+                        <input type="email" name="mail" id="email" required>
+                    </div>
                 </div>
 
                 <div class="buscas">
@@ -68,17 +68,18 @@
                 </div>
                 <div class="mensaje">
                     <label for="mensaje">
-                        <h7>Tu consulta</h5>
+                        <p>Tu consulta</p>
                     </label>
                     <textarea name="mensaje" id="mensaje" maxlength="700" required></textarea>
                 </div>
                 <input type="submit" class="boton-enviar" value="ENVIAR">
             </form>
         </section>
+    </main>
 
-        <footer>
+    <footer>
         <div class="footer-izquierdo">
-            <img src="img/catedra.png" alt="catedra" width="84" height="46">
+            <img src="img/catedra.png" alt="catedra" width="74" height="36">
             <ul>
                 <li>
                     <p>Computación III</p>
@@ -101,16 +102,16 @@
         </div>
 
         <div class="redes-sociales">
-            <img src="img/facebook.svg" alt="facebook" width="35" height="35">
+            <img src="img/svg/facebook.svg" alt="facebook" width="25" height="25">
             <a href="#"></a>
 
-            <img src="img/begance.svg.svg" alt="begance" width="60" height="34">
+            <img src="img/svg/begance.svg.svg" alt="begance" width="50" height="24">
             <a href="#"></a>
 
-            <img src="img/instagram.svg" alt="instagram" width="35" height="35">
+            <img src="img/svg/instagram.svg" alt="instagram" width="25" height="25">
             <a href="#"></a>
         </div>
 
     </footer>
-    </main>
+
 </body>
