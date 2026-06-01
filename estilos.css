@@ -212,8 +212,8 @@ footer {
 }
 
 .boton-sm:hover {
-border: 2px solid #000;
-background: rgba(60, 203, 255, 0.38);
+    border: 2px solid #000;
+    background: rgba(60, 203, 255, 0.38);
 }
 
 .parrafo {
@@ -286,8 +286,8 @@ background: rgba(60, 203, 255, 0.38);
 }
 
 .boton-cnt:hover {
-border: 2px solid #000;
-background: rgba(60, 203, 255, 0.38);
+    border: 2px solid #000;
+    background: rgba(60, 203, 255, 0.38);
 }
 
 .img-contacto {
@@ -435,8 +435,8 @@ textarea {
 }
 
 .boton-enviar:hover {
-border: 2px solid #000;
-background: rgba(60, 203, 255, 0.38);
+    border: 2px solid #000;
+    background: rgba(60, 203, 255, 0.38);
 }
 
 .dato {
@@ -581,7 +581,7 @@ background: rgba(60, 203, 255, 0.38);
     justify-content: center;
     align-items: flex-start;
     gap: 70px;
-    margin-bottom: 80px; 
+    margin-bottom: 80px;
 }
 
 #galeria-proyectos1 a,
@@ -595,7 +595,7 @@ background: rgba(60, 203, 255, 0.38);
 #galeria-proyectos1 img,
 #galeria-proyectos3 img {
     border-radius: 30px;
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
 
@@ -622,15 +622,15 @@ background: rgba(60, 203, 255, 0.38);
 #galeria-proyectos2 {
     display: flex;
     flex-direction: column;
-margin-bottom: 120px;
+    margin-bottom: 120px;
 }
 
 #galeria-proyectos2 h3,
 #galeria-proyectos2 p {
     font-family: "amarante regular", sans-serif;
-max-width: 1070px;
+    max-width: 1070px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     width: 90%;
 }
 
@@ -644,7 +644,7 @@ max-width: 1070px;
     justify-content: center;
     flex-wrap: nowrap;
     gap: 47px;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 .grupo-fotos img {
